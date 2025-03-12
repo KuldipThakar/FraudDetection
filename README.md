@@ -1,2 +1,4 @@
 #Fraud Detection with XGBoost
+
+
 This project uses XGBoost, a powerful machine learning tool, to detect fraudulent financial transactions. It analyzes a dataset with 11 columns, including features like transaction amount, time step, type (e.g., "TRANSFER"), account balances, and a flag for suspected fraud. The target is 'isFraud', a numeric column (0 for Not Fraud, 1 for Fraud). The code loads the data from a CSV, preprocesses it by converting the 'type' column to numbers (using LabelEncoder), drops less useful text columns (customer IDs), and trains an XGBoost Classifier to predict fraud. It evaluates accuracy and detailed metrics, tests new transactions, and shows which features matter most. The goal is to accurately identify fraud while handling missing values automatically, making it a practical tool for financial security.
